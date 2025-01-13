@@ -1,6 +1,9 @@
-const gridContainer = document.querySelector("#grid-container");
-
-
+const gridContainer = document.querySelector(".grid");
+let gridButton = document.querySelector(".gridButton");
+let boxNum = 0;
+gridButton.onclick = function() {
+    boxNum = prompt("Enter number of boxes per side");
+}
 
 for(i = 0; i < 16 ; i++) {
     for(j = 0; j < 16 ; j++) {
@@ -13,10 +16,6 @@ function createBox() {
     let box = document.createElement("div");
     box.classList.add("box");
     return box;
-}
-
-function changeColor() {
-    this.style.backgroundColor = 'red';
 }
 
 let boxes = document.querySelectorAll(".box");

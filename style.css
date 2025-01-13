@@ -4,15 +4,40 @@
     box-sizing: border-box;
 }
 
-.box {
-    height: 50px;
-    width: 50px;
-    border: 1px solid red;
+.enter {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
 }
 
-#grid-container {
-    height: 800px;
-    width: 800px;
+.enter > button {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: sans-serif;
+    color: white;
+    background-color:brown;
+    border-radius: 1.5rem;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid{
+    height: 500px;
+    width: 500px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.box {
+    height: 30px;
+    width: 30px;
+    border: 1px solid red;
 }
