@@ -37,7 +37,5 @@
 
 
 .box {
-    height: 30px;
-    width: 30px;
     border: 1px solid red;
 }
